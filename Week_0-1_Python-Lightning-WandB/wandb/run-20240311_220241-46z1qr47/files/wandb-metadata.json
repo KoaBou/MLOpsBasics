@@ -1,0 +1,102 @@
+{
+    "os": "Linux-6.2.0-36-generic-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "heartbeatAt": "2024-03-11T15:02:42.747088",
+    "startedAt": "2024-03-11T15:02:41.186425",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/ngin/PycharmProjects/MLOpsBasics/Week_0-Python-Lightning/train.py",
+    "codePathLocal": "train.py",
+    "codePath": "train.py",
+    "host": "Ngins",
+    "username": "ngin",
+    "executable": "/home/ngin/PycharmProjects/MLOpsBasics/.venv/bin/python",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 3615.7838333333334,
+        "min": 1200.0,
+        "max": 3300.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3394.122,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 3394.056,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 4227.131,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 3931.016,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 4201.534,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 3300.0,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 3633.89,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 3391.053,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 4242.295,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 4242.086,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 4235.394,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 4224.6,
+            "min": 1200.0,
+            "max": 3300.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 149.9625587463379,
+            "used": 99.14952850341797
+        }
+    },
+    "gpu": "NVIDIA GeForce GTX 1650",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce GTX 1650",
+            "memory_total": 4294967296
+        }
+    ],
+    "memory": {
+        "total": 7.106925964355469
+    }
+}

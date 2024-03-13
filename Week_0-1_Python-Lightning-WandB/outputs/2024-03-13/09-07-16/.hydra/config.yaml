@@ -1,0 +1,13 @@
+model:
+  name: Ngin
+  tokenizer: google/bert_uncased_L-2_H-128_A-2
+processing:
+  batch_size: 64
+  max_length: 128
+training:
+  lr: 0.001
+  max_epochs: 1
+  log_every_n_steps: 10
+  deterministic: true
+  limit_train_batches: 0.25
+  limit_val_batches: ${limit_train_batches}

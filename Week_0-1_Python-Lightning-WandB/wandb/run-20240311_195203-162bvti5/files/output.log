@@ -1,0 +1,59 @@
+Map: 100%|██████████| 8551/8551 [00:00<00:00, 9967.93 examples/s]
+Map: 100%|██████████| 1043/1043 [00:00<00:00, 10891.94 examples/s]
+/home/ngin/PycharmProjects/MLOpsBasics/.venv/lib/python3.10/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:653: Checkpoint directory /home/ngin/PycharmProjects/MLOpsBasics/Week_0-Python-Lightning/models exists and is not empty.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+  | Name | Type      | Params
+-----------------------------------
+0 | bert | BertModel | 4.4 M
+1 | W    | Linear    | 258
+-----------------------------------
+4.4 M     Trainable params
+0         Non-trainable params
+4.4 M     Total params
+17.545    Total estimated model params size (MB)
+/home/ngin/PycharmProjects/MLOpsBasics/.venv/lib/python3.10/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:441: The 'val_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=11` in the `DataLoader` to improve performance.
+/home/ngin/PycharmProjects/MLOpsBasics/.venv/lib/python3.10/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:441: The 'train_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=11` in the `DataLoader` to improve performance.
+
+
+
+
+Epoch 0:  98%|█████████▊| 263/268 [00:09<00:00, 29.17it/s, v_num=vti5, train_loss=0.686]
+
+
+
+
+Epoch 1: 100%|██████████| 268/268 [00:08<00:00, 29.99it/s, v_num=vti5, train_loss=0.603, val_loss=0.623, val_acc=0.691]
+
+
+
+
+
+Epoch 3:   4%|▍         | 12/268 [00:00<00:08, 30.66it/s, v_num=vti5, train_loss=0.705, val_loss=0.620, val_acc=0.691]
+
+
+
+
+
+Epoch 4:  11%|█         | 30/268 [00:00<00:07, 30.50it/s, v_num=vti5, train_loss=0.595, val_loss=0.619, val_acc=0.691]
+
+
+
+
+Epoch 4:  96%|█████████▌| 256/268 [00:08<00:00, 29.78it/s, v_num=vti5, train_loss=0.596, val_loss=0.619, val_acc=0.691]
+
+
+
+
+Epoch 5: 100%|██████████| 268/268 [00:08<00:00, 29.79it/s, v_num=vti5, train_loss=0.477, val_loss=0.618, val_acc=0.691]
+
+
+
+
+
+
+
+
+
+
+Epoch 7: 100%|██████████| 268/268 [00:09<00:00, 28.16it/s, v_num=vti5, train_loss=0.604, val_loss=0.623, val_acc=0.691]
+Monitored metric val_loss did not improve in the last 3 records. Best score: 0.618. Signaling Trainer to stop.

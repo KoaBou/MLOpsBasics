@@ -1,0 +1,50 @@
+Map: 100%|██████████| 8551/8551 [00:00<00:00, 10791.84 examples/s]
+Map: 100%|██████████| 1043/1043 [00:00<00:00, 13618.29 examples/s]
+/home/ngin/PycharmProjects/MLOpsBasics/.venv/lib/python3.10/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:653: Checkpoint directory /home/ngin/PycharmProjects/MLOpsBasics/Week_0-Python-Lightning/models exists and is not empty.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+  | Name                   | Type            | Params
+-----------------------------------------------------------
+0 | bert                   | BertModel       | 4.4 M
+1 | W                      | Linear          | 258
+2 | train_accuracy_metric  | BinaryAccuracy  | 0
+3 | val_accuracy_metric    | BinaryAccuracy  | 0
+4 | f1_metric              | BinaryF1Score   | 0
+5 | precision_macro_metric | BinaryPrecision | 0
+6 | recall_macro_metric    | BinaryRecall    | 0
+7 | precision_micro_metric | BinaryPrecision | 0
+8 | recall_micro_metric    | BinaryRecall    | 0
+-----------------------------------------------------------
+4.4 M     Trainable params
+0         Non-trainable params
+4.4 M     Total params
+17.545    Total estimated model params size (MB)
+/home/ngin/PycharmProjects/MLOpsBasics/.venv/lib/python3.10/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:441: The 'val_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=11` in the `DataLoader` to improve performance.
+Sanity Checking DataLoader 0: 100%|██████████| 2/2 [00:00<00:00,  4.06it/s]
+Traceback (most recent call last):
+  File "/home/ngin/PycharmProjects/MLOpsBasics/Week_0-Python-Lightning/train.py", line 32, in <module>
+    trainer.fit(cola_model, cola_data)
+  File "/home/ngin/PycharmProjects/MLOpsBasics/.venv/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 544, in fit
+    call._call_and_handle_interrupt(
+  File "/home/ngin/PycharmProjects/MLOpsBasics/.venv/lib/python3.10/site-packages/pytorch_lightning/trainer/call.py", line 44, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+  File "/home/ngin/PycharmProjects/MLOpsBasics/.venv/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 580, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path)
+  File "/home/ngin/PycharmProjects/MLOpsBasics/.venv/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 987, in _run
+    results = self._run_stage()
+  File "/home/ngin/PycharmProjects/MLOpsBasics/.venv/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 1031, in _run_stage
+    self._run_sanity_check()
+  File "/home/ngin/PycharmProjects/MLOpsBasics/.venv/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 1060, in _run_sanity_check
+    val_loop.run()
+  File "/home/ngin/PycharmProjects/MLOpsBasics/.venv/lib/python3.10/site-packages/pytorch_lightning/loops/utilities.py", line 182, in _decorator
+    return loop_run(self, *args, **kwargs)
+  File "/home/ngin/PycharmProjects/MLOpsBasics/.venv/lib/python3.10/site-packages/pytorch_lightning/loops/evaluation_loop.py", line 142, in run
+    return self.on_run_end()
+  File "/home/ngin/PycharmProjects/MLOpsBasics/.venv/lib/python3.10/site-packages/pytorch_lightning/loops/evaluation_loop.py", line 268, in on_run_end
+    self._on_evaluation_end()
+  File "/home/ngin/PycharmProjects/MLOpsBasics/.venv/lib/python3.10/site-packages/pytorch_lightning/loops/evaluation_loop.py", line 313, in _on_evaluation_end
+    call._call_callback_hooks(trainer, hook_name, *args, **kwargs)
+  File "/home/ngin/PycharmProjects/MLOpsBasics/.venv/lib/python3.10/site-packages/pytorch_lightning/trainer/call.py", line 208, in _call_callback_hooks
+    fn(trainer, trainer.lightning_module, *args, **kwargs)
+  File "/home/ngin/PycharmProjects/MLOpsBasics/callback.py", line 13, in on_validation_end
+    sentences = val_batch["sentence"]
+KeyError: 'sentence'

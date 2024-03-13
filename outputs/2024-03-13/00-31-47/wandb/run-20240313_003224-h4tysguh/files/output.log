@@ -1,0 +1,30 @@
+Map: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 8551/8551 [00:00<00:00, 11029.82 examples/s]
+Map: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1043/1043 [00:00<00:00, 7536.08 examples/s]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+  | Name                   | Type            | Params
+-----------------------------------------------------------
+0 | bert                   | BertModel       | 4.4 M
+1 | W                      | Linear          | 258
+2 | train_accuracy_metric  | BinaryAccuracy  | 0
+3 | val_accuracy_metric    | BinaryAccuracy  | 0
+4 | f1_metric              | BinaryF1Score   | 0
+5 | precision_macro_metric | BinaryPrecision | 0
+6 | recall_macro_metric    | BinaryRecall    | 0
+7 | precision_micro_metric | BinaryPrecision | 0
+8 | recall_micro_metric    | BinaryRecall    | 0
+-----------------------------------------------------------
+4.4 M     Trainable params
+0         Non-trainable params
+4.4 M     Total params
+17.545    Total estimated model params size (MB)
+/home/ngin/PycharmProjects/MLOpsBasics/.venv/lib/python3.10/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:441: The 'val_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=11` in the `DataLoader` to improve performance.
+Sanity Checking DataLoader 0: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:00<00:00,  3.60it/s]
+
+Epoch 0:  74%|███████████████████████████████████████████████████████████████████████████████████████████▌                                | 99/134 [00:05<00:01, 17.57it/s, v_num=sguh, train/loss_step=0.517, train/acc_step=0.812]
+Epoch 0: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 134/134 [00:07<00:00, 17.76it/s, v_num=sguh, train/loss_step=0.505, train/acc_step=0.821]
+Validation DataLoader 0:  24%|███████████████████████████████████████▎                                                                                                                               | 4/17 [00:00<00:00, 30.35it/s]
+
+
+Validation DataLoader 0: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 17/17 [00:00<00:00, 28.96it/s]
+Metric valid/loss improved. New best score: 0.613
+`Trainer.fit` stopped: `max_epochs=1` reached.

@@ -1,0 +1,56 @@
+Map: 100%|██████████| 8551/8551 [00:00<00:00, 11003.02 examples/s]
+Map: 100%|██████████| 1043/1043 [00:00<00:00, 13206.96 examples/s]
+/home/ngin/PycharmProjects/MLOpsBasics/.venv/lib/python3.10/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:653: Checkpoint directory /home/ngin/PycharmProjects/MLOpsBasics/Week_0-Python-Lightning/models exists and is not empty.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+  | Name                   | Type            | Params
+-----------------------------------------------------------
+0 | bert                   | BertModel       | 4.4 M
+1 | W                      | Linear          | 258
+2 | train_accuracy_metric  | BinaryAccuracy  | 0
+3 | val_accuracy_metric    | BinaryAccuracy  | 0
+4 | f1_metric              | BinaryF1Score   | 0
+5 | precision_macro_metric | BinaryPrecision | 0
+6 | recall_macro_metric    | BinaryRecall    | 0
+7 | precision_micro_metric | BinaryPrecision | 0
+8 | recall_micro_metric    | BinaryRecall    | 0
+-----------------------------------------------------------
+4.4 M     Trainable params
+0         Non-trainable params
+4.4 M     Total params
+17.545    Total estimated model params size (MB)
+/home/ngin/PycharmProjects/MLOpsBasics/.venv/lib/python3.10/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:441: The 'val_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=11` in the `DataLoader` to improve performance.
+Sanity Checking DataLoader 0: 100%|██████████| 2/2 [00:00<00:00,  4.73it/s]
+
+
+
+Epoch 0: 100%|██████████| 268/268 [00:09<00:00, 29.33it/s, v_num=5z3z, train/loss_step=0.748, train/acc_step=0.571]
+
+Validation DataLoader 0: 100%|██████████| 33/33 [00:00<00:00, 59.28it/s]
+
+
+Epoch 1: 100%|██████████| 268/268 [00:09<00:00, 29.37it/s, v_num=5z3z, train/loss_step=0.919, train/acc_step=0.429, valid/loss_step=0.470, valid/loss_epoch=0.622, valid/acc=0.691, valid/precision_macro=0.691, valid/recall_macro=1.000, valid/precision_micro=0.691, valid/recall_micro=1.000, valid/f1=0.814, train/loss_epoch=0.652, train/acc_epoch=0.691]
+
+
+
+Epoch 2: 100%|██████████| 268/268 [00:09<00:00, 29.40it/s, v_num=5z3z, train/loss_step=0.337, train/acc_step=1.000, valid/loss_step=0.468, valid/loss_epoch=0.623, valid/acc=0.691, valid/precision_macro=0.691, valid/recall_macro=1.000, valid/precision_micro=0.691, valid/recall_micro=1.000, valid/f1=0.814, train/loss_epoch=0.611, train/acc_epoch=0.704]
+
+
+
+Epoch 3: 100%|██████████| 268/268 [00:09<00:00, 29.66it/s, v_num=5z3z, train/loss_step=0.600, train/acc_step=0.714, valid/loss_step=0.468, valid/loss_epoch=0.623, valid/acc=0.691, valid/precision_macro=0.691, valid/recall_macro=1.000, valid/precision_micro=0.691, valid/recall_micro=1.000, valid/f1=0.814, train/loss_epoch=0.610, train/acc_epoch=0.704]
+
+
+Validation DataLoader 0: 100%|██████████| 33/33 [00:00<00:00, 58.41it/s]
+
+
+Epoch 4: 100%|██████████| 268/268 [00:09<00:00, 28.34it/s, v_num=5z3z, train/loss_step=0.598, train/acc_step=0.714, valid/loss_step=0.497, valid/loss_epoch=0.618, valid/acc=0.691, valid/precision_macro=0.691, valid/recall_macro=1.000, valid/precision_micro=0.691, valid/recall_micro=1.000, valid/f1=0.814, train/loss_epoch=0.609, train/acc_epoch=0.704]
+
+
+
+Epoch 5: 100%|██████████| 268/268 [00:09<00:00, 28.60it/s, v_num=5z3z, train/loss_step=0.599, train/acc_step=0.714, valid/loss_step=0.482, valid/loss_epoch=0.619, valid/acc=0.691, valid/precision_macro=0.691, valid/recall_macro=1.000, valid/precision_micro=0.691, valid/recall_micro=1.000, valid/f1=0.814, train/loss_epoch=0.608, train/acc_epoch=0.704]
+
+
+
+Epoch 6: 100%|██████████| 268/268 [00:09<00:00, 29.23it/s, v_num=5z3z, train/loss_step=0.599, train/acc_step=0.714, valid/loss_step=0.494, valid/loss_epoch=0.618, valid/acc=0.691, valid/precision_macro=0.691, valid/recall_macro=1.000, valid/precision_micro=0.691, valid/recall_micro=1.000, valid/f1=0.814, train/loss_epoch=0.610, train/acc_epoch=0.704]
+
+Validation DataLoader 0: 100%|██████████| 33/33 [00:00<00:00, 51.98it/s]
+Monitored metric valid/loss did not improve in the last 3 records. Best score: 0.618. Signaling Trainer to stop.
